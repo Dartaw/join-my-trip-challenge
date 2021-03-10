@@ -1,0 +1,141 @@
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  width: fit-content;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+.secondary-container {
+  border-radius: 2em;
+  background: linear-gradient(180deg, #F5F5F5  0%, #FCFCFC 60%);
+  box-shadow: 0 1px 2px 0 rgba(106, 105, 105, 0.1), 0 1px 2px 0 rgba(80, 80, 80, 0.1);
+  margin: 1em;
+}
+
+.cards-container {
+  display: flex;
+  margin-bottom: 3em;
+}
+
+.divider {
+  width: 1em;
+  height: 0.2em;
+}
+
+.card {
+  background-color: green;
+  width: 100%;
+  min-height: 8.125em;
+  position:relative;
+  padding-bottom: 1em;
+  color: #F5F5F5;
+}
+
+.text-container {
+  align-items: center;
+  z-index: 20;
+}
+
+.text {
+  margin-bottom: 0;
+  max-width: 75%;
+  font-size: 1em;
+  text-align: center;
+}
+
+.card__text--big {
+  margin-top: 0;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.card__leader {
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 4em;
+  background: linear-gradient(90deg, #2F53FF 0%, #8C1AEC 100%);
+}
+
+.card__mates {
+  border-bottom-right-radius: 1.5em;
+  border-bottom-left-radius: 3em;
+  background: linear-gradient(90deg, #FF9761 0%, #FF424E 100%);
+}
+
+.card__image {
+  position: absolute;
+  z-index: 10;
+}
+
+.card__image_leader {
+  right: 0em;
+}
+
+.link {
+  color: #2CACD6;
+  margin-bottom: 2.5em;
+  font-weight: 700;
+}
+
+.darkest-grey {
+  color: #373A3C
+}
+
+@media only screen and (min-width: 600px) {
+
+  .cards-container {
+    justify-content: stretch;
+    flex-direction: row;
+  }
+
+  .card__leader {
+    border-bottom-left-radius: 1.5em;
+  }
+
+  .card__mates {
+    border-radius: 4em 2em 3em 0em;
+  }
+
+  .card__image {
+    height: 4.75em;
+    bottom: -2.375em;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .secondary-container {
+    border-top-right-radius: 4em;
+  }
+
+  .cards-container {
+    justify-content: stretch;
+    flex-direction: column;
+  }
+
+  .card__mates {
+    border-radius: 0em 0em 2em 3em;
+  }
+
+  .card__image {
+    height: 3.75em;
+  }
+
+  .card__image_leader {
+    bottom: -1.875em;
+  }
+
+  .card__image_mates {
+    top: -1.875em;
+  }
+}
