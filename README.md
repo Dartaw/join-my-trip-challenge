@@ -5,8 +5,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Set up instructions
 
 Install node.js
+
 Install npm
-Install Angular cli
+
+Install Angular CLI
+
 ``
 npm install -g @angular/cli
 ``
