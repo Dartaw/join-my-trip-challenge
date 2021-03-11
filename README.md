@@ -17,6 +17,9 @@ Clone repository
 ```bash
 git clone https://github.com/Dartaw/join-my-trip-challenge.git
 ```
+```bash
+cd join-my-trip-challenge
+```
 Install node modules
 ```bash
 npm install
