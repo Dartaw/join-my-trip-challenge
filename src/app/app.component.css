@@ -19,7 +19,7 @@
   border-radius: 1.5em;
   max-width: 58em;
   background: linear-gradient(180deg, #F5F5F5  0%, #FCFCFC 60%);
-  box-shadow: 0 1px 2px 0 rgba(106, 105, 105, 0.1), 0 1px 2px 0 rgba(80, 80, 80, 0.1);
+  box-shadow: 3px 3px 2px -1px #373A3C, -3px 3px 2px -1px #373A3C;
   margin: 1em;
 }
 
