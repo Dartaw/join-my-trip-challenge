@@ -10,3 +10,8 @@ app-root {
   display: block;
   height: 100%;
 }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
