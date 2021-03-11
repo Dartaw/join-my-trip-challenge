@@ -10,10 +10,17 @@ Install npm
 
 Install Angular CLI
 
-``
+```bash
 npm install -g @angular/cli
-``
+```
+Clone repository
+```bash
+git clone https://github.com/Dartaw/join-my-trip-challenge.git
+```
+Install node modules
+```bash
+npm install
+```
 
-## Run development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
