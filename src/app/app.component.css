@@ -5,18 +5,19 @@
 
 .main-container {
   align-items: center;
-  height: 100%;
+  justify-content: center;
   width: 100%;
 }
 
 .title {
   width: fit-content;
-  font-size: 1.75em;
   text-align: center;
+  font-weight: 700;
 }
 
 .secondary-container {
-  border-radius: 2em;
+  border-radius: 1.5em;
+  max-width: 58em;
   background: linear-gradient(180deg, #F5F5F5  0%, #FCFCFC 60%);
   box-shadow: 0 1px 2px 0 rgba(106, 105, 105, 0.1), 0 1px 2px 0 rgba(80, 80, 80, 0.1);
   margin: 1em;
@@ -24,39 +25,43 @@
 
 .cards-container {
   display: flex;
-  margin-bottom: 3em;
 }
 
 .divider {
-  width: 1em;
+  width: 1.125em;
   height: 0.2em;
 }
 
 .card {
-  background-color: green;
   width: 100%;
   min-height: 8.125em;
   position:relative;
-  padding-bottom: 1em;
   color: #F5F5F5;
 }
 
 .text-container {
+  margin-top: 1.375em;
   align-items: center;
-  z-index: 20;
 }
 
 .text {
-  margin-bottom: 0;
-  max-width: 75%;
+  margin: 0;
+  max-width: 100%;
   font-size: 1em;
   text-align: center;
 }
 
+.card__text {
+  font-size: 0.75em;
+  line-height: 1.5em;
+}
+
 .card__text--big {
-  margin-top: 0;
+  margin-top: -0.4em;
+  margin-bottom: 0;
   font-size: 1.25em;
   font-weight: 700;
+  padding-bottom: 0.5em;
 }
 
 .card__leader {
@@ -80,6 +85,13 @@
   right: 0em;
 }
 
+.subtitle {
+  font-size: 1.125em;
+  font-weight: 700;
+  text-align: center;
+  width: 70%;
+}
+
 .link {
   color: #2CACD6;
   margin-bottom: 2.5em;
@@ -92,6 +104,11 @@
 
 @media only screen and (min-width: 600px) {
 
+  .title {
+    font-size: 1.875em;
+    margin-bottom: 0.25em;
+  }
+
   .cards-container {
     justify-content: stretch;
     flex-direction: row;
@@ -102,7 +119,21 @@
   }
 
   .card__mates {
-    border-radius: 4em 2em 3em 0em;
+    border-radius: 4em 1.5em 3em 0em;
+  }
+
+  .text-container--left {
+    margin-right: 4.5em;
+    margin-left: 2em;
+  }
+
+  .text-container--right {
+    margin-left: 4.5em;
+    margin-right: 2em;
+  }
+
+  .card__text--media:after {
+    content: 'Uncover unique experiences created by trusted TripLeaders from arround the world.'
   }
 
   .card__image {
@@ -110,9 +141,22 @@
     bottom: -2.375em;
   }
 
+  .under-title-text {
+    max-width: 60%;
+  }
+
+  .subtitle {
+    margin-top: 1.25em;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
+
+  .title {
+    font-size: 1.375em;
+    margin: 1em 2em 0em 2em;
+  }
 
   .secondary-container {
     border-top-right-radius: 4em;
@@ -124,7 +168,21 @@
   }
 
   .card__mates {
-    border-radius: 0em 0em 2em 3em;
+    border-radius: 0em 0em 1.5em 3em;
+  }
+
+  .text-container--left {
+    margin-right: 2.25em;
+    margin-left: 1.25em;
+  }
+
+  .text-container--right {
+    margin-left: 2.25em;
+    margin-right: 1.25em;
+  }
+
+  .card__text--media:after {
+    content: 'Trusted TripLeaders from arround the world have planned hundreds of unique experiences.'
   }
 
   .card__image {
@@ -138,4 +196,22 @@
   .card__image_mates {
     top: -1.875em;
   }
+
+  .subtitle {
+    margin-top: 0;
+    max-width: 80%;
+  }
+
+  .under-title-text {
+    max-width: 80%;
+  }
+
+}
+
+@media only screen and (min-height: 400px) {
+
+  .main-container {
+    height: 100vh;
+  }
+
 }
